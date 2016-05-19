@@ -15,5 +15,5 @@ todo
 No support is given here for SSL. That's out of scope for the simple lightweight set up desired. Please feel free to fork this repo and add your SSL certs to it (in private obviously).
 
 ## To-dos
-[] Add env variable for port
-[] Add env variable for redirect
+- [ ] Add env variable for port
+- [ ] Add env variable for redirect
