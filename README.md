@@ -8,8 +8,13 @@ Behold! A lightweight solution using nginx that you can stand up anywhere you ca
 Simply pass the environment variable like so:
 
 ````
-todo
+docker run -e "REDIRECT_HOST=kingarthurflour.com" -dt ilkelma/www-redirect
 ````
+
+
+## Configurable environment variables
+- `REDIRECT_HOST` This is the A record hostname so host + TLD ex: `kingarthurflour.com` Default: `google.com` (best to change that as above)
+- `REDIRECT_SUBDOMAIN` This the subdomain (including the final .) so `www.` for www.kingarthurflour.com. Default: `www.`
 
 ## Known limitations
 No support is given here for SSL. That's out of scope for the simple lightweight set up desired. Please feel free to fork this repo and add your SSL certs to it (in private obviously).
